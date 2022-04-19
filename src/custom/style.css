@@ -10,6 +10,11 @@ h2{
 p{
     font-size: 1rem;
 }
+
+.fontStyle{
+    color: rgb(82, 200, 82);
+}
+
 .line1, .line2 {
     border-left: 6px solid green;
     height: 10rem;
