@@ -1,23 +1,26 @@
+import Questions from "./components/Question";
 import "./custom/style.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="landing">
-          <h1>
-            <div class="line1"></div>
-            Lost <span className = "fontStyle">&</span> Found
-            <div class="line2"></div>
-          </h1>
+    return (
+        <div className="App">
+            <header className="App-header">
+                <div className="landing">
+                    <h1>
+                        <div className="line1"></div>
+                        Lost <span className="fontStyle">&</span> Found
+                        <div className="line2"></div>
+                    </h1>
 
-          <h2>What kind of flower am I ?</h2>
-          <p>Find out by answering this short array of questions !</p>
-          <button>Start the Test</button>
+                    <h2>What kind of flower am I ?</h2>
+                    <p>Find out by answering this short array of questions !</p>
+                    <button>Start the Test</button>
+                </div>
+            </header>
+
+            <Questions />
         </div>
-      </header>
-    </div>
-  );
+    );
 }
 
 export default App;
