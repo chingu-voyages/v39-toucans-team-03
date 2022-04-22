@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Question Image"
+        "Answer1 Image"
+        "Answer2 Image";
+    width: 75%;
+    height: 50%;
+}
+
+.Question {
+    grid-area: Question;
+}
+
+.Answer1 {
+    grid-area: Answer1;
+}
+
+.Answer2 {
+    grid-area: Answer2;
+}
+
+.Image {
+    grid-area: Image;
+}
