@@ -24,7 +24,7 @@ function Result(props) {
             <span className="center typing-demo" >Result</span>
         </div>
         <div className="result_picture">
-            <img src={resultPic} className="result_picture_elements" alt="" />
+            <img src={resultPic} className="result_picture_elements" alt="The flower that matches your personality" />
             <div>
                 
             </div>
