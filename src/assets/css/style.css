@@ -35,9 +35,10 @@ p{
 .landing button{
     margin-top: 3rem;
     font-size: larger;
-    width: 8rem;
+    width: 10rem;
     height: 4rem;
-    border: green 5px dotted;
+    border: green 5px solid;
+    border-radius: 50px;
 }
 .landing button:hover{
     cursor: pointer;
