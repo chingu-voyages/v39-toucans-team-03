@@ -1,6 +1,6 @@
 import React from "react";
-import '../custom/result_style/css_Result.css';
-import resultPic from "../rf.jpg";
+import '../assets/css/style_result.css';
+import resultPic from "../assets/img/sample_result.jpg";
 
 // results: Array(2)
 // 0: {lion: 0}
@@ -26,7 +26,7 @@ function Result(props) {
         <div className="result_picture">
             <img src={resultPic} className="result_picture_elements" alt="" />
             <div>
-                diagram
+                
             </div>
         </div>
         <div className ="checkList">
@@ -48,8 +48,6 @@ function Result(props) {
         </div>
     </div>
     
-    
-    
     // <div>
     //     {props.results.map((e, idx) => (
     //             <div key={idx}>
@@ -57,8 +55,7 @@ function Result(props) {
     //             </div>
     //         ))}
     // </div> 
-    
-    
+
     );
 }
 

@@ -1,17 +1,17 @@
 import React, { useRef, useState } from "react";
 // import Questions from "./components/Question";
-import bg from "./pexels-antoni-shkraba-4612235.jpg";
-import "./Question.css";
-import "./custom/style.css";
+import bg from "./assets/img/pexels-antoni-shkraba-4612235.jpg";
+import "./assets/css/Question.css";
+import "./assets/css/style.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Question from "./components/Question";
 import Result from "./components/Result";
 import Landing from "./components/Landing";
-import lain0 from "./035.jpg";
-import lain1 from "./049.jpg";
-import lain2 from "./050.jpg";
-import lain3 from "./063.jpg";
-import lain4 from "./095.jpg";
+import lain0 from "./assets/img/035.jpg";
+import lain1 from "./assets/img/049.jpg";
+import lain2 from "./assets/img/050.jpg";
+import lain3 from "./assets/img/063.jpg";
+import lain4 from "./assets/img/095.jpg";
 
 const lains = [lain0, lain1, lain2, lain3, lain4];
 
