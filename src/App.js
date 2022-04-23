@@ -20,27 +20,27 @@ function App() {
     const [results, set_results] = useState([{ lion: 0 }, { cow: 0 }]);
     const [questions] = useState([
         {
-            question: "your question here",
+            question: "your question here your question here your question here your question here ?",
+            one: ["lion wins lion wins lion wins lion wins", "lion"],
+            two: ["cow wins cow wins cow wins cow wins cow wins", "cow"],
+        },
+        {
+            question: "your question here  your question here your question here ?",
             one: ["lion wins", "lion"],
             two: ["cow wins", "cow"],
         },
         {
-            question: "your question here",
+            question: "your question here your question here your question here your question here ?",
             one: ["lion wins", "lion"],
             two: ["cow wins", "cow"],
         },
         {
-            question: "your question here",
+            question: "your question here your question here your question here ?",
             one: ["lion wins", "lion"],
             two: ["cow wins", "cow"],
         },
         {
-            question: "your question here",
-            one: ["lion wins", "lion"],
-            two: ["cow wins", "cow"],
-        },
-        {
-            question: "your question here",
+            question: "your question here your question here your question here your question here ?",
             one: ["lion wins", "lion"],
             two: ["cow wins", "cow"],
         },

@@ -14,6 +14,7 @@
 
 .Question {
     grid-area: Question;
+    font-size: 2rem;
 }
 
 .Answer1 {
@@ -26,4 +27,27 @@
 
 .Image {
     grid-area: Image;
+}
+
+.option{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 4rem;
+    border: green 5px solid;
+    border-radius: 13px;    
+}
+
+@media (max-width: 480px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "Question"
+        "Image"
+        "Answer1"
+        "Answer2";
+    }
 }
