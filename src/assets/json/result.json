@@ -1,8 +1,13 @@
 {
-    "next week" : "Make up or find the list of characters",
-    "in result" : {
-        "Using Mbti" : "probably(not sure)",
-        "Giving a setence" : "based on scores of each result",
-        "sentence_example" : "Your introver it means you are calm and thoughtful person."
+    "quotes" :
+    {
+        "introvert" :"jo",
+        "extravert" :[
+            "quotes extra",
+            "quotes extra",
+            "quotes extra",
+            "quotes extra",
+            "quotes extra"
+        ]
     }
 }

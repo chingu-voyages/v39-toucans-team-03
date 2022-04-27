@@ -99,7 +99,7 @@ function App() {
                 })}
                 <ParallaxLayer
                     speed={1}
-                    style={parallax_style}
+                    // style={parallax_style}
                     offset={questions.length + 1}
                 >
                     <Result results={results} />
