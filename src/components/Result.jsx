@@ -4,13 +4,27 @@ import resultPic from "../assets/img/sample_result.jpg";
 import quotes from "../assets/json/result.json"
 
 function Result(props) {
-    const results = props.results;
-
-    // // console.log(typeof quotes)
     
-    // const {introvert, extravert} = quotes;
-    // console.log(typeof introvert, introvert)
-    // console.log(typeof extravert, extravert )
+    const [results, setResult] = useState(props.results)
+    const [data, setData] = useState(quotes);
+    const [quote, setQuote] = useState('');
+    console.log(data.quotes.introvert)
+    let lion = results[0].lion
+    let cow = results[1].cow
+
+    if(cow === lion){
+        
+    }
+
+    if(cow > lion){
+
+    }
+
+    if(lion < cow){
+
+    }
+    
+
 
     return ( 
     <div className="container-section">
@@ -19,7 +33,14 @@ function Result(props) {
         </div>
         <div className="result-section">
             <div className="center title">Result</div>
-            <div className="center"></div>
+            <div className="center">
+                {quote}
+            </div>
+            {/* check list */}
+            <div className="center title">Check List</div>
+            <div>
+
+            </div>
         </div>
     </div>
     );

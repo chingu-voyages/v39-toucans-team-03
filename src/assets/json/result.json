@@ -1,7 +1,7 @@
 {
     "quotes" :
     {
-        "introvert" :"jo",
+        "introvert" :["jo","jo"],
         "extravert" :[
             "quotes extra",
             "quotes extra",
