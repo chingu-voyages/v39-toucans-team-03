@@ -5,24 +5,10 @@ import quotes from "../assets/json/result.json"
 
 function Result(props) {
     
-    const [results, setResult] = useState(props.results)
+    const [results] = useState(props.results)
     const [data, setData] = useState(quotes);
     const [quote, setQuote] = useState('');
-    console.log(data.quotes.introvert)
-    let lion = results[0].lion
-    let cow = results[1].cow
-
-    if(cow === lion){
-        
-    }
-
-    if(cow > lion){
-
-    }
-
-    if(lion < cow){
-
-    }
+    
     
 
 
@@ -39,7 +25,8 @@ function Result(props) {
             {/* check list */}
             <div className="center title">Check List</div>
             <div>
-
+                Introvert: { results.introvert }
+                Extrovert: { results.extrovert }
             </div>
         </div>
     </div>

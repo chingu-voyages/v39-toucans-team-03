@@ -17,43 +17,40 @@ const lains = [lain0, lain1, lain2, lain3, lain4];
 
 function App() {
     const ref = useRef();
-    const [results, set_results] = useState([{ lion: 0 }, { cow: 0 }]);
+    const [results, set_results] = useState( {introvert: 0 ,  extrovert: 0} );
     const [questions] = useState([
         {
             question: "your question here your question here your question here your question here ?",
-            one: ["lion wins lion wins lion wins lion wins", "lion"],
-            two: ["cow wins cow wins cow wins cow wins cow wins", "cow"],
+            one: ["lion wins lion wins lion wins lion wins", "introvert"],
+            two: ["cow wins cow wins cow wins cow wins cow wins", "extrovert"],
         },
         {
             question: "your question here  your question here your question here ?",
-            one: ["lion wins", "lion"],
-            two: ["cow wins", "cow"],
+            one: ["lion wins", "introvert"],
+            two: ["cow wins", "extrovert"],
         },
         {
             question: "your question here your question here your question here your question here ?",
-            one: ["lion wins", "lion"],
-            two: ["cow wins", "cow"],
+            one: ["lion wins", "introvert"],
+            two: ["cow wins", "extrovert"],
         },
         {
             question: "your question here your question here your question here ?",
-            one: ["lion wins", "lion"],
-            two: ["cow wins", "cow"],
+            one: ["lion wins", "introvert"],
+            two: ["cow wins", "extrovert"],
         },
         {
             question: "your question here your question here your question here your question here ?",
-            one: ["lion wins", "lion"],
-            two: ["cow wins", "cow"],
+            one: ["lion wins", "introvert"],
+            two: ["cow wins", "extrovert"],
         },
     ]);
     const answered = (e) => {
         console.log(e);
-        console.log(Object.keys(results[0]));
-        let results_copy = results.map((r) => {
-            if (Object.keys(r)[0] === e) r[e] = r[e] + 1;
-            return r;
-        });
-        console.log(results_copy);
-        set_results([...results_copy]);
+        let results_copy = results;
+        results_copy[e] += 1;
+        console.log(results_copy)
+        set_results({...results_copy});
     };
     const parallax_style = {
         display: "flex",
