@@ -1,13 +1,310 @@
 {
-    "quotes" :
-    {
-        "introvert" :["jo","jo"],
-        "extravert" :[
-            "quotes extra",
-            "quotes extra",
-            "quotes extra",
-            "quotes extra",
-            "quotes extra"
+    "quotes": {
+        "introvert": [
+            {
+                "quote": "Let’s clear one thing up: Introverts do not hate small talk because we dislike people. We hate small talk because we hate the barrier it creates between people.",
+                "author": "-Laurie Helgoe, 'Introvert Power: Why Your Inner Life Is Your Hidden Strength', 2008."
+            },
+            {
+                "quote": "I am rarely bored alone; I am often bored in groups and crowds.",
+                "author": "-Laurie Helgoe, 'Introvert Power: Why Your Inner Life Is Your Hidden Strength', 2008."
+            },
+            {
+                "quote": "Introverts enjoy people-watching. Extroverts enjoy people watching.",
+                "author": "Jonny Sun, 'Everyone's a Aliebn When Ur a Aliebn Too', 2017."
+            },
+            {
+                "quote": "You do not need to leave your room. Remain sitting at your table and listen.",
+                "author": "-Franz Kafka, 'The Zurau Aphorisms', 1931."
+            },
+            {
+                "quote": "Please kindly go away, I’m introverting.",
+                "author": "- Beth Buelow, 'The Introvert Entrepreneur: Amplify Your Strengths and Create Success on Your Own Terms', 2015."
+            },
+            {
+                "quote": "Some kinds of night animals and people that don’t fit in with others and that nobody really believes in. They keep out of the way all the year. And then when everything’s quiet and white and the nights are long and most people are asleep—then they appear.",
+                "author": "- Tove Jansson, 'Moominland Midwinter - The Moomins', 1957."
+            },
+            {
+                "quote": "Quiet people have the loudest minds.",
+                "author": "- Stephen Hawking."
+            },
+            {
+                "quote": "I think a lot, but I don’t say much.",
+                "author": "-Anne Frank, 'The Diary Of a Young Girl', 1952."
+            },
+            {
+                "quote": "Silence is only frightening to people who are compulsively verbalizing.",
+                "author": "-William S. Burroughs, 'The Job: Interviews With William S. Burroughs'."
+            },
+            {
+                "quote": "Everyone shines, given the right lighting.",
+                "author": "-Susan Cain, 'Quiet: The Power of Introverts in a World That Can't Stop Talking', 2012."
+            },
+            {
+                "quote": "People empty me. I have to get away to refill.",
+                "author": "- C. Bukowski, 'The Captain is Out to Lunch and the Sailors Have Taken Over the Ship', 1998."
+            },
+            {
+                "quote": "In order to be open to creativity, one must have the capacity for constructive use of solitude. One must overcome the fear of being alone.",
+                "author": "- Rollo May, 'Man's Search for Himself', 1953."
+            },
+            {
+                "quote": "Don’t underestimate me because I’m quiet. I know more than I say, think more than I speak and observe more than you know.",
+                "author": "- Michaela Chung."
+            },
+            {
+                "quote": "I have to be alone very often. I’d be quite happy if I spent from Saturday night until Monday morning alone in my apartment. That’s how I refuel.",
+                "author": "-Audrey Hepburn, 'Many-Sided Charmer, LIFE Magazine', 1953."
+            },
+            {
+                "quote": "What if you love knowledge for its own sake, not necessarily as a blueprint to action? What if you wish there were more, not fewer reflective types in the world.",
+                "author": "-Susan Cain, 'Quiet: The Power of Introverts in a World That Can't Stop Talking', 2012."
+            },
+            {
+                "quote": "There is a tremendous difference between alone and lonely. You could be lonely in a group of people. I like being alone. I like eating by myself. I go home at night and just watch a movie or hang out with my dog.",
+                "author": "-Drew Barrymore."
+            },
+            {
+                "quote": "I like saying the most with the least.",
+                "author": "-Bob Newhart."
+            },
+            {
+                "quote": "A good rule of thumb is that any environment that consistently leaves you feeling bad about who you are is the wrong environment.",
+                "author": "-Laurie Helgoe, 'Introvert Power: Why Your Inner Life Is Your Hidden Strength', 2008."
+            },
+            {
+                "quote": "Introverts crave meaning so party chitchat feels like sandpaper to our psyche.",
+                "author": "-Diane Cameron."
+            },
+            {
+                "quote": "The highest form of love is to be the protector of another person’s solitude.",
+                "author": "-Rainer Maria Rilke, 'Letters To A Young Poet', 1929."
+            },
+            {
+                "quote": "When you’re an introvert like me and you’ve been lonely for a while, and then you find someone who understands you, you become really attached to them. It’s a real release.",
+                "author": "-Lana Del Rey, ''Interview By Ernest Becker, Complex'."
+            },
+            {
+                "quote": "Luna was glad Amy wasn’t one to pry. She knew that if she wanted to talk about it, she would. More people needed to be like her.",
+                "author": "-Kayla Krantz, 'Dead by Morning - Rituals of the Night', 2015."
+            },
+            {
+                "quote": "Originality thrives in seclusion free of outside influences beating upon us to cripple the creative mind. Be alone—that is the secret of invention: be alone, that is when ideas are born.",
+                "author": "- Nikola Tesla."
+            },
+            {
+                "quote": "If you like to do things in a slow and steady way, don’t let others make you feel as if you have to race. If you enjoy depth, don’t force yourself to seek breadth.",
+                "author": "- Susan Cain, 'Quiet: The Power of Introverts in a World That Can't Stop Talking', 2012."
+            },
+            {
+                "quote": "Introvert conversations are like jazz. Each player gets to solo for a nice stretch before the other player comes in and does his solo.",
+                "author": "- Laurie Helgoe, 'Introvert Power: Why Your Inner Life Is Your Hidden Strength', 2008."
+            },
+            {
+                "quote": "Introverts are word economists in a society suffering from verbal diarrhea.",
+                "author": "- Michaela Chung."
+            },
+            {
+                "quote": "I am worn out with civility. I have been talking incessantly all night with nothing to say.",
+                "author": "-Jane Austen, 'Mansfield Park', 1814."
+            },
+            {
+                "quote": "I want to be alone… with someone else who wants to be alone.",
+                "author": "– Dimitri Zaik."
+            },
+            {
+                "quote": "I’m very picky with whom I give my energy to. I prefer to reserve my time, intensity and spirit exclusively to those who reflect sincerity.",
+                "author": "-Dau Voire."
+            },
+            {
+                "quote": "Introverts live in two worlds: We visit the world of people, but solitude and the inner world will always be our home.",
+                "author": "-Jenn Granneman, 'The Secret Lives of Introverts: Inside Our Hidden World', 2017."
+            }
+        ],
+        "extrovert": [
+            {
+                "quote": "For the extrovert, cause is from outside, he tries to achieve when he sees the things. While the introvert lives from inside, he feels something then he goes to find it or achieve it.",
+                "author": " -Chetan Patel."
+            },
+            {
+                "quote": "Either we are here to motivate others or to become an extrovert in our own world.",
+                "author": " -Unknown*.*Do you know where this quote originated? Please email us to let us know at hello@kidadl.com"
+            },
+            {
+                "quote": "I'm an introspective person. I'm not an extrovert.",
+                "author": " -John Thaw."
+            },
+            {
+                "quote": "Leave an extrovert alone for two minutes and he will reach for his cell phone.",
+                "author": " -Jonathan Rauch."
+            },
+            {
+                "quote": "The ability to focus on a single task for an extended period is a talent that’s underappreciated - especially by extroverts, who continue to exercise an unhealthy hegemony over most workplaces.",
+                "author": " -Kevin Drum."
+            },
+            {
+                "quote": "My folks are hilarious extroverts and have always been very supportive of all my artistic endeavors.",
+                "author": " -Kate Brown."
+            },
+            {
+                "quote": "I prefer to regard a dessert as I would imagine the perfect woman: subtle, a little bittersweet, not blowsy and extrovert.",
+                "author": " -Graham Kerr."
+            },
+            {
+                "quote": "Extroversion is an enormously appealing personality style, but we've turned it into an oppressive standard to which most of us feel we must conform.",
+                "author": " -Susan Cain."
+            },
+            {
+                "quote": "If the extrovert watches and listens a bit more, the introvert’s true mood will become more evident.",
+                "author": " -Laurie Helgoe."
+            },
+            {
+                "quote": "An extrovert is more likely to share immediate reactions and process information through conversation.",
+                "author": " -Laurie Helgoe."
+            },
+            {
+                "quote": "There are a lot of people out there who are exactly half extrovert and half introvert and they love to be extroverts as long as they have enough time to go off and figure it all out.",
+                "author": " -Dar Williams."
+            },
+            {
+                "quote": "I think Dickens was an extrovert and Nelly [Ternan] an introvert, and I think that Nelly saw beyond the fame and adulation and she actually loved Dickens essentially for who he was.",
+                "author": " -Felicity Jones."
+            },
+            {
+                "quote": "Either you are extrovert or introvert, and so I am an introvert in that sense. I'm not a social person that wants to go to parties.",
+                "author": " -Gautam Adani."
+            },
+            {
+                "quote": "I'm an introvert, but I disguise my introversion by being an extrovert.",
+                "author": " -Cordae"
+            },
+            {
+                "quote": "There is no greater plague to an introvert than the extroverted.",
+                "author": " - Pierce Brown, 'Golden Son'."
+            },
+            {
+                "quote": "I'm a nonstop extrovert, a people person who loves mingling and gabbing and getting out in the world.",
+                "author": " - Meghan McCain."
+            },
+            {
+                "quote": "I think every film actor secretly wants to be a rock star as well; just that part of the job which requires the extrovert in you.",
+                "author": "-Ben Barnes."
+            },
+            {
+                "quote": "I wasn't the classic comedy type; I wasn't bullied or extrovert. I was more the ambitious literary one who wanted to write clever little plays.",
+                "author": "-Stewart Lee."
+            },
+            {
+                "quote": "I'm not sure if I'm an introvert or extrovert. I love being around people, but sometimes I do need to go off and fart.",
+                "author": " -Joe Lycett."
+            },
+            {
+                "quote": "As a director, nobody told me I'd be talking to people all day. I'm naturally reclusive - I feel myself peek out at a certain point and go, 'All the extrovert in me is done! I'm on reserve!'",
+                "author": " -Pete Docter."
+            },
+            {
+                "quote": "When I was growing up, I wasn’t an extrovert. If anything, I was an introverted kid and a very average pupil at school. I was very quiet.",
+                "author": " -Clint Eastwood."
+            },
+            {
+                "quote": "When I'm performing I'm an extrovert, yet inside I'm a completely different man.",
+                "author": " -Freddie Mercury."
+            },
+            {
+                "quote": "A boss who interrupts an employee a lot is called an extrovert, whereas an employee who interrupts a boss too often is called an ex-employee.",
+                "author": " -John Ortberg."
+            },
+            {
+                "quote": "I’m a real extrovert, but when I’m round someone new, I’m super shy.",
+                "author": " -Serena Williams."
+            },
+            {
+                "quote": "As I got into high school and after puberty, I was a little more inward. I was a real extrovert when I was little, but I don’t know, I just got quieter… With my friends, I was still an extrovert.",
+                "author": "-John Mulaney."
+            },
+            {
+                "quote": "In a way, education by its nature favors the extrovert because you are taking kids and putting them into a big classroom, which is automatically going to be a high-stimulation environment.",
+                "author": "-Susan Cain."
+            },
+            {
+                "quote": "To some extent, we’ve always had an admiration for extroversion in our culture. But the extrovert ideal really came to play at the turn of the 20th century when we had the rise of big business.",
+                "author": "-Susan Cain."
+            },
+            {
+                "quote": "Nobody enjoys the company of others as intensely as someone who usually avoids the company of others.",
+                "author": "-Mokokoma Mokhonoana."
+            },
+            {
+                "quote": "I attract a crowd, not because I’m an extrovert or I’m over the top or I’m oozing with charisma. It’s because I care.",
+                "author": " - Gary Vaynerchuk."
+            },
+            {
+                "quote": "I’m still finding my feet in many ways as a performer. I’m not an extrovert, and certainly, the attention isn’t what drew me to it, and I find that quite jarring at times. I used to stress a lot about shows and get palpitations before shows, but eventually, you learn to love it, and it is a thrill.",
+                "author": "- Hozier"
+            }
+        ],
+        "ambivert": [
+            {
+                "quote": "I have to be alone very often. I'd be quite happy if I spent from Saturday night until Monday morning alone in my apartment. That's how I refuel.",
+                "author": "- Audrey Hepburn, 'LIFE', 7 December 1953."
+            },
+            {
+                "quote": "I am a mild introvert. But I have learned to be a very successful extrovert because if you want impact, you have to work with people.",
+                "author": "–Patrick Pichette."
+            },
+            {
+                "quote": "You may think I'm small, but I have a universe inside my mind.",
+                "author": "– Yoko Ono."
+            },
+            {
+                "quote": "I'm very picky with who I give my energy to. I prefer to reserve my time, intensity and spirit exclusively to those who reflect sincerity.",
+                "author": "-Dau Voire."
+            },
+            {
+                "quote": "Companionship is a foreign concept to some people. They fear it as much as the majority of people fear loneliness.",
+                "author": "- Criss Jami."
+            },
+            {
+                "quote": "I'm a little unusual. I'm a six-person-or-less extrovert.",
+                "author": "-Reid Hoffman."
+            },
+            {
+                "quote": "I want to be alone… with someone else who wants to be alone.",
+                "author": "– Dimitri Zaik."
+            },
+            {
+                "quote": "There is no such thing as a pure introvert or extrovert. Such a person would be in the lunatic asylum.",
+                "author": "– Carl Jung."
+            },
+            {
+                "quote": "I'm an introvert somewhat. There could be a room full of people, I'll go stand in the corner.",
+                "author": "- Kevin Gates."
+            },
+            {
+                "quote": "Wise men, when in doubt whether to speak or to keep quiet, give themselves the benefit of the doubt, and remain silent.",
+                "author": "- Napoleon Hill, 'The Master Key To Riches: A Sequel To Think And Grow Rich', 1945."
+            },
+            {
+                "quote": "In my most natural state, I'll be introverted for say, six days in a row, and then on the seventh day, I'll become very extroverted, completely inside-out. Then I'll have to go back inside myself. Sometimes the change can be quite forceful—it's something I can't really control.",
+                "author": "-Björk, 2001."
+            },
+            {
+                "quote": "A good rule of thumb is that any environment that consistently leaves you feeling bad about who you are in the wrong environment.",
+                "author": "- Laurie Helgoe, 'Introvert Power: Why Your Inner Life Is Your Hidden Strength', 2008."
+            },
+            {
+                "quote": "I think I'm a weird combination of deeply introverted and very daring. I can feel both those things working.",
+                "author": "- Helen Hunt."
+            },
+            {
+                "quote": "Don't underestimate me because I'm quiet. I know more than I say, think more than I speak, and observe more than you know.",
+                "author": "- Michaela Chung."
+            },
+            {
+                "quote": "Alone had always felt like an actual place to me, as if it weren't a state of being, but rather a room where I could retreat to be who I really was.",
+                "author": "- Cheryl Strayed, 'Wild: A Journey From Lost To Found', 2012."
+            }
         ]
     }
 }
