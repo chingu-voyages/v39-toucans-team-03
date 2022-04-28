@@ -7,6 +7,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Question from "./components/Question";
 import Result from "./components/Result";
 import Landing from "./components/Landing";
+import Progress from "./components/Progress";
 import lain0 from "./assets/img/035.jpg";
 import lain1 from "./assets/img/049.jpg";
 import lain2 from "./assets/img/050.jpg";
@@ -55,8 +56,12 @@ function App() {
         alignItems: "center",
         justifyContent: "center",
     };
+    function updateProgressBar(idx){
+        document.querySelector(".progress-bar").style.width=`${(idx/questions.length)*100}%`;
+    }
     return (
         <React.Fragment>
+            <Progress />
             <Parallax ref={ref} pages={questions.length + 2}>
                 <ParallaxLayer
                     offset={0}
@@ -77,7 +82,10 @@ function App() {
                     console.log(idx);
                     return (
                         <ParallaxLayer
-                            onClick={() => ref.current.scrollTo(idx + 2)}
+                            onClick={() => {
+                                ref.current.scrollTo(idx + 2);
+                                updateProgressBar(idx+1);
+                            }}
                             speed={1}
                             offset={idx + 1}
                             style={parallax_style}
