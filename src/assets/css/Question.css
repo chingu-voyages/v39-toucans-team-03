@@ -34,7 +34,8 @@
     width: 100%;
     height: 4rem;
     border: green 5px solid;
-    border-radius: 13px;    
+    border-radius: 13px; 
+    cursor: pointer;   
 }
 
 @media (max-width: 480px){
