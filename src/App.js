@@ -46,10 +46,8 @@ function App() {
         },
     ]);
     const answered = (e) => {
-        console.log(e);
         let results_copy = results;
         results_copy[e] += 1;
-        console.log(results_copy)
         set_results({...results_copy});
     };
     const parallax_style = {
