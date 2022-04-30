@@ -1,16 +1,31 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import '../assets/css/style_result.css';
 import resultPic from "../assets/img/sample_result.jpg";
-import quotes from "../assets/json/result.json"
+import resultQuote from "../assets/json/quotes.json"
 
 function Result(props) {
-    
-    const [results] = useState(props.results)
-    const [data, setData] = useState(quotes);
-    const [quote, setQuote] = useState('');
-    
-    
 
+    const results = props.results; // const [results] = useState(props.results);
+    let isFinished =  props.isFinished;
+    const [quotes, setQuotes] = useState(()=>resultQuote.quotes);
+    const [oneQuote, setOneQuote] = useState({quote:'loading...', author:''});
+    
+    useEffect(()=>{
+        if(isFinished === true){
+            setOneQuote(prev => {
+                    if(results.introvert > results.extrovert){
+                        prev = quotes.introvert[Math.floor(Math.random() * 30)];
+                    } 
+                    else if(results.introvert === results.extrovert) {
+                        prev = quotes.ambivert[Math.floor(Math.random() * 30)];
+                    }
+                    else{
+                        prev = quotes.extrovert[Math.floor(Math.random() * 15)];
+                    }
+                    return prev;
+            })
+        }
+    },[isFinished])
 
     return ( 
     <div className="container-section">
@@ -20,13 +35,13 @@ function Result(props) {
         <div className="result-section">
             <div className="center title">Result</div>
             <div className="center">
-                {quote}
+                <div>{oneQuote.quote}</div>
+                <div>{oneQuote.author}</div>
             </div>
             {/* check list */}
             <div className="center title">Check List</div>
             <div>
-                Introvert: { results.introvert }
-                Extrovert: { results.extrovert }
+                {/* checklists */}
             </div>
         </div>
     </div>

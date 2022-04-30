@@ -18,7 +18,8 @@ const lains = [lain0, lain1, lain2, lain3, lain4];
 
 function App() {
     const ref = useRef();
-    const [results, set_results] = useState( {introvert: 0 ,  extrovert: 0} );
+    
+    const [results, set_results] = useState( {introvert: 0 ,  extrovert: 0, count : 0} );
     const [questions] = useState([
         {
             question: "your question here your question here your question here your question here ?",
@@ -46,9 +47,12 @@ function App() {
             two: ["cow wins", "extrovert"],
         },
     ]);
+    let isFinished = results.count === 5 ? true : false;
+
     const answered = (e) => {
         let results_copy = results;
         results_copy[e] += 1;
+        results_copy.count += 1;
         set_results({...results_copy});
     };
     const parallax_style = {
@@ -86,6 +90,7 @@ function App() {
                                 ref.current.scrollTo(idx + 2);
                                 updateProgressBar(idx+1);
                             }}
+                            key={idx}
                             speed={1}
                             offset={idx + 1}
                             style={parallax_style}
@@ -105,7 +110,7 @@ function App() {
                     // style={parallax_style}
                     offset={questions.length + 1}
                 >
-                    <Result results={results} />
+                    <Result isFinished={isFinished} results={results} />
                 </ParallaxLayer>
             </Parallax>
         </React.Fragment>
