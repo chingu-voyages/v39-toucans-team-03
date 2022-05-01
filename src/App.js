@@ -22,32 +22,28 @@ function App() {
     const [results, set_results] = useState( {introvert: 0 ,  extrovert: 0, count : 0} );
     const [questions] = useState([
         {
-            question: "your question here your question here your question here your question here ?",
-            one: ["lion wins lion wins lion wins lion wins", "introvert"],
-            two: ["cow wins cow wins cow wins cow wins cow wins", "extrovert"],
+            question: "On a honey-like weekend?",
+            one: ["After all, I should take a rest while watching TV at home on weekends.", "introvert"],
+            two: ["The house is so boring! I will go anywhere!", "extrovert"],
         },
         {
-            question: "your question here  your question here your question here ?",
-            one: ["lion wins", "introvert"],
-            two: ["cow wins", "extrovert"],
+            question: "What is my first reaction when I am angry?",
+            one: ["I’m filled with anger and I'm crying.", "introvert"],
+            two: ["Speak rationally about the reason for my anger.", "extrovert"],
         },
         {
-            question: "your question here your question here your question here your question here ?",
-            one: ["lion wins", "introvert"],
-            two: ["cow wins", "extrovert"],
+            question: "Which one is closer to me? I think I know where my things are, but when I look for them,",
+            one: ["I am well organized and find where my things are.", "introvert"],
+            two: ["I can't find them...", "extrovert"],
         },
         {
-            question: "your question here your question here your question here ?",
-            one: ["lion wins", "introvert"],
-            two: ["cow wins", "extrovert"],
-        },
-        {
-            question: "your question here your question here your question here your question here ?",
-            one: ["lion wins", "introvert"],
-            two: ["cow wins", "extrovert"],
-        },
+            question: "Your friend asks you to drag you in front of her/his friend of opposite sex and have a conversation.",
+            one: ["I’m shy, so I just smile quietly and be awkward.", "introvert"],
+            two: ["Laugh and have fun talking together.", "extrovert"],
+        }
     ]);
-    let isFinished = results.count === 5 ? true : false;
+    
+    let isFinished = results.count === 4 ? true : false;
 
     const answered = (e) => {
         let results_copy = results;
