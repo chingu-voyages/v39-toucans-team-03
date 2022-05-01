@@ -22,6 +22,16 @@
   flex: 1;
 }
 
+.result-section > div{
+  color : #ffffff;
+  padding : 1em 5em;
+  flex-direction: column;
+}
+
+.checklist-section{
+
+}
+
 @media screen and (max-width: 450px){
   .container-section {
     display:flex;
