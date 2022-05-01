@@ -43,7 +43,7 @@ function App() {
         }
     ]);
     
-    let isFinished = results.count === 4 ? true : false;
+    let isFinished = results.count === Object.keys(questions).length ? true : false;
 
     const answered = (e) => {
         let results_copy = results;
