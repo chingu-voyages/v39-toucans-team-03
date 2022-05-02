@@ -17,6 +17,10 @@
     font-size: 2rem;
 }
 
+.Question h3{
+    text-shadow: 2px 0px 5px white;
+}
+
 .Answer1 {
     grid-area: Answer1;
 }
