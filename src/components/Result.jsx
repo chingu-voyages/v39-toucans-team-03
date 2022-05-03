@@ -4,6 +4,10 @@ import resultPic from "../assets/img/sample_result.jpg";
 import resultQuote from "../assets/json/quotes.json"
 import introvertChecklist from "../assets/json/introvert.json"
 import extrovertChecklist from "../assets/json/extrovert.json"
+// import {kakaotalk, messenger, wechat} from "../assets/img/icons";
+import kakaotalk from "../assets/img/icons/kakaotalk.png";
+import messenger from "../assets/img/icons/messenger.png";
+import wechat from "../assets/img/icons/wechat.png";
 
 function Result(props) {
 
@@ -38,7 +42,7 @@ function Result(props) {
     return ( 
     <div className="container-section">
         <div className="picture-section">
-            <img src={resultPic} className="resultPic" alt="what?" />
+            {/* <img src={resultPic} className="resultPic" alt="what?" /> */}
         </div>
         <div className="result-section">
             <div className="center title">Result</div>
@@ -53,6 +57,17 @@ function Result(props) {
                 <ul>
                     {checkList.map((list,idx) =><li key={idx+1}>{list}</li>)}
                 </ul>}
+            </div>
+            <div className="center">
+                <button>Retry</button>
+            </div>
+            <div className="share-section">
+                <div className="center title ">Share with your friends</div>
+                <div className="center">
+                    <img src={messenger} alt="" />
+                    <img src={kakaotalk} alt="" />
+                    <img src={wechat} alt="" />
+                </div>
             </div>
         </div>
     </div>

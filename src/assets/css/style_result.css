@@ -1,131 +1,76 @@
 
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+  display: flex;
+  align-items: center;
+  justify-content: center;    
 }
 
 /* Pattern styles */
 .container-section {
-  display:flex;
+display:flex;
 }
 
 .picture-section{
-  flex: 1;
+flex: 1;
 }
 
 .resultPic{
-  max-width: 100%;
+max-width: 100%;
+/* min-height: 100%; */
 }
+
+.result-section {
+flex: 1;
+}
+
+.result-section > div{
+color : #ffffff;
+padding : 1em 5em;
+flex-direction: column;
+}
+
+.share-section > div{
+padding : 1em 5em; 
+}
+
+.share-section > div > img{
+padding : 1em;
+}
+
+.title{
+  /* font-family: monospace; */
+  font-size: 2em;
+  padding-top :2em;
+}
+
+@media screen and (max-width: 450px){
+.container-section {
+  display:flex;
+  flex-direction: column;    
+}
+
+.picture-section{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  flex:1;
+} 
 
 .result-section {
   flex: 1;
 }
 
-.result-section > div{
-  color : #ffffff;
-  padding : 1em 5em;
-  flex-direction: column;
+.resultPic{
+  padding: 3em 0;
+  width : 40%;
 }
 
-.checklist-section{
-
-}
-
-@media screen and (max-width: 450px){
-  .container-section {
-    display:flex;
-    flex-direction: column;    
-  }
- 
-  .picture-section{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    flex:1;
-  } 
-
-  .result-section {
-    flex: 1;
-  }
-
-  .resultPic{
-    padding: 3em 0;
-    width : 40%;
-  }
-  
-}
 
 .title{
-  font-family: monospace;
-  font-size: 2em;
-  padding-top :2 em;
-}
-.grid-parent{
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: repeat(5, 1fr);
+/* font-family: monospace; */
+font-size: 1em;
+padding-top :2em;
 }
 
-.grid-parent > .title{
-  grid-row : 1;
-  grid-column : 3;
 }
 
-.grid-parent > .picture{
-  grid-row : 3;
-  grid-column : 2/5;
-}
-
-.grid-parent > .diagram{
-  grid-row : 3;
-  grid-column : 4/5;
-}
-
-.grid-parent > .items{
-  grid-row : 2;
-  grid-column : 2/5
-}
-
-.typing-demo {
-    width: 22ch;
-    /* animation: typing 5s steps(6), blink .5s step-end infinite alternate; */
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
-}
-
-
-
-.result_picture{
-    display: flex;
-    justify-content: space-between;
-    height :100%
-   
-}
-
-.myclass {
-  list-style-type:none;
-  /* margin-left: 5px;    */
-}
-
-
-
-.result_picture_elements{
-  height: 500px;
-}
-
-@keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
