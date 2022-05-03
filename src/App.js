@@ -16,16 +16,17 @@ import lain4 from "./assets/img/095.jpg";
 import questions_json from "./assets/json/questions.json"
 
 const lains = [lain0, lain1, lain2, lain3, lain4];
+const intialState = {introvert: 0 ,  extrovert: 0, count : 0};
 
 function App() {
     const ref = useRef();
     
-    const [results, set_results] = useState( {introvert: 0 ,  extrovert: 0, count : 0} );
     const [questions] = useState(questions_json);
-    
+    const [results, set_results] = useState(intialState);
     let isFinished = results.count === Object.keys(questions).length ? true : false;
-
+    
     const answered = (e) => {
+        console.log('hi')
         let results_copy = results;
         results_copy[e] += 1;
         results_copy.count += 1;
@@ -36,9 +37,18 @@ function App() {
         alignItems: "center",
         justifyContent: "center",
     };
+    
+    const clearState = () => {
+        // set_results({...intialState}); //when clicking the retry button, it set the result value as{ introvert: 1,  extrovert: 0, count : 1}
+        set_results({...{introvert: 0 ,  extrovert: 0, count : 0}});
+        console.log('in clearState',results)
+    }
+
     function updateProgressBar(idx){
         document.querySelector(".progress-bar").style.width=`${(idx/questions.length)*100}%`;
     }
+
+    console.log(results)
     return (
         <React.Fragment>
             <Progress />
@@ -86,7 +96,7 @@ function App() {
                     // style={parallax_style}
                     offset={questions.length + 1}
                 >
-                    <Result isFinished={isFinished} results={results} />
+                    <Result isFinished={isFinished} results={results} clearState={clearState} />
                 </ParallaxLayer>
             </Parallax>
         </React.Fragment>

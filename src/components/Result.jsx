@@ -17,7 +17,6 @@ function Result(props) {
     const [oneQuote, setOneQuote] = useState({quote:'Answer all the question first :)', author:''});
     const [checkList, setCheckList] = useState('Waiting you to finish all the questions!')
     
-    console.log(results)
     // console.log("before", checkList.map(list=>list+1))
     useEffect(()=>{
         if(isFinished === true){
@@ -59,14 +58,14 @@ function Result(props) {
                 </ul>}
             </div>
             <div className="center">
-                <button>Retry</button>
+                <button onClick={props.clearState}>Retry</button>
             </div>
             <div className="share-section">
                 <div className="center title ">Share with your friends</div>
                 <div className="center">
-                    <img src={messenger} alt="" />
-                    <img src={kakaotalk} alt="" />
-                    <img src={wechat} alt="" />
+                    <a href="\"><img src={messenger} alt="" /></a>
+                    <a href="\"><img src={kakaotalk} alt="" /></a>
+                    <a href="\"><img src={wechat} alt="" /></a>
                 </div>
             </div>
         </div>
