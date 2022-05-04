@@ -23,14 +23,19 @@ function App() {
     
     const [questions] = useState(questions_json);
     const [results, set_results] = useState(intialState);
-    let isFinished = results.count === Object.keys(questions).length ? true : false;
+    const [isFinished, setIsFinished] = useState(false);
+
     
     const answered = (e) => {
         console.log('hi')
         let results_copy = results;
         results_copy[e] += 1;
         results_copy.count += 1;
-        set_results({...results_copy});
+        set_results({...results_copy}); 
+        setIsFinished(prev => {
+            return results.count === Object.keys(questions).length ? true : false
+        })
+
     };
     const parallax_style = {
         display: "flex",
@@ -41,8 +46,8 @@ function App() {
     const clearState = () => {
         // set_results({...intialState}); //when clicking the retry button, it set the result value as{ introvert: 1,  extrovert: 0, count : 1}
         set_results({...{introvert: 0 ,  extrovert: 0, count : 0}});
-        console.log('in clearState',results)
-        ref.current.scrollTo(0)
+        setIsFinished(false);
+        ref.current.scrollTo(0);
     }
 
     function updateProgressBar(idx){

@@ -10,33 +10,45 @@ import messenger from "../assets/img/icons/messenger.png";
 import wechat from "../assets/img/icons/wechat.png";
 
 function Result(props) {
-
+    const state = {
+        oneQuote : { 
+            quote:"Answer all the question first :)", author:""
+        },
+        checkList : "Waiting you to finish all the questions!"
+    }
     const results = props.results; // const [results] = useState(props.results);
     let isFinished =  props.isFinished;
     const [quotes] = useState(()=>resultQuote.quotes);
-    const [oneQuote, setOneQuote] = useState({quote:'Answer all the question first :)', author:''});
-    const [checkList, setCheckList] = useState('Waiting you to finish all the questions!')
+    const [oneQuote, setOneQuote] = useState(state.oneQuote);
+    const [checkList, setCheckList] = useState(state.checkList)
     
     // console.log("before", checkList.map(list=>list+1))
     useEffect(()=>{
         if(isFinished === true){
             setOneQuote(prev => {
-                    if(results.introvert > results.extrovert){
+                    if(results.introvert > results.extrovert){ //introvert
                         prev = quotes.introvert[Math.floor(Math.random() * 30)];
                         setCheckList(() => introvertChecklist.checklist)
                     } 
-                    else if(results.introvert === results.extrovert) {
-                        prev = quotes.ambivert[Math.floor(Math.random() * 30)];
-                        setCheckList(() => extrovertChecklist.checklist)
+                    else if(results.introvert === results.extrovert) { // ambivert
+                        prev = quotes.ambivert[Math.floor(Math.random() * 15)];
+                        setCheckList(() => 'preparing...')
                     }
-                    else{
-                        prev = quotes.extrovert[Math.floor(Math.random() * 15)];
+                    else{ //extrovert
+                        prev = quotes.extrovert[Math.floor(Math.random() * 30)];
+                        setCheckList(() => extrovertChecklist.checklist)
                     }
                     
                     return prev;
             })
         }
     },[isFinished, quotes, results])
+
+    const clearAll = () => {
+        setOneQuote(prev => state.oneQuote);
+        setCheckList(prev => state.checkList);
+        props.clearState();
+    }
 
     return ( 
     <div className="container-section">
@@ -58,10 +70,10 @@ function Result(props) {
                 </ul>}
             </div>
             <div className="center">
-                <button onClick={props.clearState}>Retry</button>
+                <button onClick={clearAll}>Retry</button>
             </div>
             <div className="share-section">
-                <div className="center title ">Share with your friends</div>
+                <div className="center title">Share with your friends</div>
                 <div className="center">
                     <a href="\"><img src={messenger} alt="" /></a>
                     <a href="\"><img src={kakaotalk} alt="" /></a>
