@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/v39-toucans-team-03/static/css/main.472dba31.css",
+    "main.js": "/v39-toucans-team-03/static/js/main.08a2895e.js",
+    "static/js/787.04755d9f.chunk.js": "/v39-toucans-team-03/static/js/787.04755d9f.chunk.js",
+    "static/media/pexels-antoni-shkraba-4612235.jpg": "/v39-toucans-team-03/static/media/pexels-antoni-shkraba-4612235.1e510e781312a0c978f4.jpg",
+    "static/media/sample_result.jpg": "/v39-toucans-team-03/static/media/sample_result.9502e229ec9ab5bb417e.jpg",
+    "static/media/050.jpg": "/v39-toucans-team-03/static/media/050.6a7f59b0214db78350cb.jpg",
+    "static/media/095.jpg": "/v39-toucans-team-03/static/media/095.e920fdf3db84ff0db39e.jpg",
+    "static/media/049.jpg": "/v39-toucans-team-03/static/media/049.3b91850955d022150f5f.jpg",
+    "static/media/035.jpg": "/v39-toucans-team-03/static/media/035.d26e522dfcb28a98fe79.jpg",
+    "static/media/063.jpg": "/v39-toucans-team-03/static/media/063.6c78b4d350d3fe149f13.jpg",
+    "index.html": "/v39-toucans-team-03/index.html",
+    "main.472dba31.css.map": "/v39-toucans-team-03/static/css/main.472dba31.css.map",
+    "main.08a2895e.js.map": "/v39-toucans-team-03/static/js/main.08a2895e.js.map",
+    "787.04755d9f.chunk.js.map": "/v39-toucans-team-03/static/js/787.04755d9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.472dba31.css",
+    "static/js/main.08a2895e.js"
+  ]
+}
