@@ -42,6 +42,7 @@ function App() {
         // set_results({...intialState}); //when clicking the retry button, it set the result value as{ introvert: 1,  extrovert: 0, count : 1}
         set_results({...{introvert: 0 ,  extrovert: 0, count : 0}});
         console.log('in clearState',results)
+        ref.current.scrollTo(0)
     }
 
     function updateProgressBar(idx){

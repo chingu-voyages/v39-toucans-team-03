@@ -23,11 +23,11 @@ function Result(props) {
             setOneQuote(prev => {
                     if(results.introvert > results.extrovert){
                         prev = quotes.introvert[Math.floor(Math.random() * 30)];
-                        setCheckList(checklist => introvertChecklist.checklist)
+                        setCheckList(() => introvertChecklist.checklist)
                     } 
                     else if(results.introvert === results.extrovert) {
                         prev = quotes.ambivert[Math.floor(Math.random() * 30)];
-                        setCheckList(checklist => extrovertChecklist.checklist)
+                        setCheckList(() => extrovertChecklist.checklist)
                     }
                     else{
                         prev = quotes.extrovert[Math.floor(Math.random() * 15)];
@@ -41,7 +41,7 @@ function Result(props) {
     return ( 
     <div className="container-section">
         <div className="picture-section">
-            {/* <img src={resultPic} className="resultPic" alt="what?" /> */}
+            <img src={resultPic} className="resultPic" alt="what?" />
         </div>
         <div className="result-section">
             <div className="center title">Result</div>
@@ -54,7 +54,7 @@ function Result(props) {
                 {typeof checkList === 'string' ?
                 checkList :
                 <ul>
-                    {checkList.map((list,idx) =><li key={idx+1}>{list}</li>)}
+                    {checkList.map((list,idx) =><li key={idx+1}><input type="checkbox" className="checkbox"/>{list}</li>)}
                 </ul>}
             </div>
             <div className="center">
