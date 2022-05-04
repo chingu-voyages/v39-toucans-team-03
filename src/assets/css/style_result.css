@@ -46,6 +46,14 @@ padding : 0 1em;
 
 }
 
+ul {
+  list-style-type: none;
+}
+
+li > input {
+  margin : 0 1em;
+}
+
 @media screen and (max-width: 450px){
   .container-section {
     display:flex;
