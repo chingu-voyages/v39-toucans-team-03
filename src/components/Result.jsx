@@ -3,11 +3,16 @@ import "../assets/css/style_result.css";
 import resultPic from "../assets/img/sample_result.jpg";
 import resultQuote from "../assets/json/quotes.json";
 import checkLists from "../assets/json/checklists.json"
-// import {kakaotalk, messenger, wechat} from "../assets/img/icons";
-import kakaotalk from "../assets/img/icons/kakaotalk.png";
-import messenger from "../assets/img/icons/messenger.png";
-import wechat from "../assets/img/icons/wechat.png";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import kakaotalk from "../assets/img/icons/kakaotalk.png";
+import {
+    TwitterShareButton,
+    TwitterIcon,
+    FacebookMessengerShareButton,
+    FacebookMessengerIcon,
+    WhatsappShareButton,
+    WhatsappIcon,
+    // KakaotalkIcon,
+  } from "react-share";
 
 function Result(props) {
   const state = {
@@ -66,6 +71,8 @@ function Result(props) {
     )
   }
 
+  const currentURL = "https://chingu-voyages.github.io/v39-toucans-team-03/";
+
   return (
     <div className="container-section">
       <div className="picture-section">
@@ -87,15 +94,15 @@ function Result(props) {
         <div className="share-section">
           <div className="center title">Share with your friends</div>
           <div className="center">
-            <a href="\">
-              <img src={messenger} alt="" />
-            </a>
-            <a href="\">
-              <img src={kakaotalk} alt="" />
-            </a>
-            <a href="\">
-              <img src={wechat} alt="" />
-            </a>
+          <TwitterShareButton style={{ marginRight: "20px" }} url={currentURL}>
+                <TwitterIcon url={'https://naver.com'} size={32} round={true} />
+            </TwitterShareButton>
+            <FacebookMessengerShareButton style={{ marginRight: "20px" }} url={currentURL}>
+                <FacebookMessengerIcon size={32} round={true} />
+            </FacebookMessengerShareButton>
+            <WhatsappShareButton style={{ marginRight: "20px" }} url={currentURL}>
+                <WhatsappIcon size={32} round={true} />
+            </WhatsappShareButton>
           </div>
         </div>
       </div>
