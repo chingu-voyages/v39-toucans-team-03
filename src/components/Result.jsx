@@ -55,6 +55,7 @@ function Result(props) {
     setOneQuote(prev => state.oneQuote);
     setCheckList(prev => state.checkList);
     props.clearState();
+    document.querySelector(".progress-bar").style.width=0;
   };
 
   const renderCheckList = () => {
