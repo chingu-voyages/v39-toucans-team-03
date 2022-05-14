@@ -21,13 +21,12 @@ p{
     position: absolute;
     margin-top: 6rem;
     top: 0;
-  }
+}
 .line1{
-    left: 20%;
-    
+    left: 5%;
 }
 .line2{
-    right: 20%;
+    right: 5%;
 }
 .landing{
     text-align: center;

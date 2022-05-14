@@ -3,7 +3,7 @@ function Landing(props) {
         <div className="App">
             <header className="App-header">
                 <div className="landing">
-                    <h1>
+                    <h1 className="w">
                         <div className="line1"></div>
                         <span className="fontStyle">Your Personality</span> 
                         <p className="">- I OR E?</p>
