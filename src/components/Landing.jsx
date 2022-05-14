@@ -6,7 +6,7 @@ function Landing(props) {
                     <h1>
                         <div className="line1"></div>
                         <span className="fontStyle">Your Personality</span> 
-                        <h2>- I OR E?</h2>
+                        <p className="">- I OR E?</p>
                         <div className="line2"></div>
                     </h1>
                     <p>Find out by answering this short array of questions !</p>
