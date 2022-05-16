@@ -12,7 +12,9 @@ p{
 }
 
 .fontStyle{
-    color: rgb(82, 200, 82);
+    color: rgb(5, 70, 5);
+    text-shadow: -2px -2px 0 rgb(82, 200, 82), 2px -2px 0 rgb(82, 200, 82), -2px 2px 0 rgb(82, 200, 82), 2px 2px 0 rgb(82, 200, 82);
+
 }
 
 .line1, .line2 {
