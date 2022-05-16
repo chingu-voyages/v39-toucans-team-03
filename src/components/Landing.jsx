@@ -5,8 +5,8 @@ function Landing(props) {
                 <div className="landing">
                     <h1 className="w">
                         <div className="line1"></div>
-                        <span className="fontStyle">Your Personality</span> 
-                        <p className="">- I OR E?</p>
+                        <span className="headingStyle">Your Personality</span> 
+                        <div className="fontStyle">I OR E?</div> 
                         <div className="line2"></div>
                     </h1>
                     <p>Find out by answering this short array of questions !</p>
